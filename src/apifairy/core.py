@@ -122,7 +122,9 @@ class APIFairy:
             module_name = module_name.rsplit('.', 1)[0]
 
         # servers
-        servers = [{'url': request.url_root}]
+        servers = [{'url': 'http://localhost:8000/api/'},
+                   {'url': 'https://genesis-hexa.com/api/'},
+                   {'url': 'https://staging.genesis-hexa.com/api/'}]
 
         # tags
         tag_names = self.tags
